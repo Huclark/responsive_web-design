@@ -31,6 +31,34 @@
   transform: scale(1.1);
 }
 
+/* Socials Icons */
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.follow-text {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -54,14 +82,14 @@ body::before {
       rgba(165, 157, 49, 0.85),
       rgba(206, 196, 136, 0.75)
     ),
-    url(https://github.com/Huclark/responsive_web-design/blob/main/survey_form/survey%20form%20background.png?raw=true);
+    url(https://github.com/Huclark/responsive_web-design/blob/main/survey_form/survey%20form%20background%202.png?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -120,7 +148,7 @@ button {
 
 .description {
   font-style: italic;
-  font-weight: 200;
+  font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
