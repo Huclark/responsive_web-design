@@ -1,5 +1,5 @@
 <h1>Registration Form</h1>
-<a href="https://github.com/Huclark/memes"><img src="https://github.com/Huclark/memes/blob/main/registration%20form%20meme.jpg?raw=true alt="A meme on registration></a>
+<a href="https://github.com/Huclark/memes"><img src="https://github.com/Huclark/memes/blob/main/registration%20form%20meme.jpg?raw=true" alt="A meme on registration"></a>
 
 ## Table of Contents
 - [About](#about)

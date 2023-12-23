@@ -1,5 +1,5 @@
 <h1>Responsive Web Design</h1>
-<a href="https://github.com/Huclark/memes"><img src="https://github.com/Huclark/memes/blob/main/html%20css%20meme.png?raw=true" alt="A meme on html and css"></a>
+<a href="https://github.com/Huclark/memes"><img src="https://github.com/Huclark/memes/blob/main/html%20css%20meme.png?raw=true" alt="A meme on html and css" width="500" /></a>
 
 ## Table of Contents
 - [About](#about)
