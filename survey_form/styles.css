@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
 :root {
   --color-darkblue-alpha: #0a0f2f;
   --color-darkblue: #0a0f2f;
   --color-yellow-alpha: linear-gradient(
-      rgba(255, 222, 89, 0.75),
-      rgba(255, 145, 77, 0.75));
+    rgba(255, 222, 89, 0.75),
+    rgba(255, 145, 77, 0.75)
+  );
   --color-grey: #808080;
 }
 
@@ -60,7 +61,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -69,7 +70,7 @@ body {
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -235,7 +236,7 @@ form {
 /* Sun Animation */
 .animate {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 1.5rem;
@@ -258,7 +259,7 @@ form {
   overflow: hidden;
   padding: 4px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 svg.bg {
@@ -285,7 +286,7 @@ svg.bg {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom, #303241,#3c4456);
+  background: linear-gradient(to bottom, #303241, #3c4456);
   z-index: 10;
 }
 
@@ -294,15 +295,15 @@ svg.bg {
   width: 58px;
   height: 58px;
   border-radius: 100%;
-  transition: .5s;
+  transition: 0.5s;
   position: relative;
   z-index: 1;
 }
 
 .face__eyes {
   display: flex;
-  justify-content: center;  
-  transition: .3s;
+  justify-content: center;
+  transition: 0.3s;
   padding: 14px 6px 0;
   gap: 4px;
 }
@@ -323,7 +324,7 @@ svg.bg {
   height: 3px;
   border-radius: 100%;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .face__eye:before {
@@ -335,8 +336,8 @@ svg.bg {
   background: #000;
   right: 3px;
   top: 3px;
-  position: absolute;  
-  transition: .3s;
+  position: absolute;
+  transition: 0.3s;
 }
 
 .face__eye:after {
@@ -349,7 +350,7 @@ svg.bg {
   right: 1px;
   top: -1px;
   position: absolute;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .face__mouth {
@@ -360,7 +361,7 @@ svg.bg {
   display: block;
   margin: 0px auto;
   clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .custom__checkbox__face:hover .face__mouth {
@@ -389,11 +390,11 @@ svg.bg {
 }
 
 input:checked + .custom__checkbox > .custom__checkbox__face {
-   transform: translateX(135px);
+  transform: translateX(135px);
 }
 
 input:checked + .custom__checkbox > .custom__checkbox__face .face__eyes {
-   justify-content: start;
+  justify-content: start;
 }
 
 input:checked + .custom__checkbox > .custom__checkbox__face .face__eye:before {
@@ -404,7 +405,10 @@ input:checked + .custom__checkbox > .custom__checkbox__face .face__eye:after {
   transform: rotate(-7deg);
 }
 
-input:checked + .custom__checkbox > .custom__checkbox__face .face__eye:last-child:after {
+input:checked
+  + .custom__checkbox
+  > .custom__checkbox__face
+  .face__eye:last-child:after {
   transform: rotate(7deg);
 }
 
@@ -424,19 +428,26 @@ input:checked + .custom__checkbox > .custom__checkbox__face:hover .face__mouth {
 }
 
 input:checked + .custom__checkbox > .custom__checkbox__face:hover .face__eyes {
-    padding: 10px 6px 0;
+  padding: 10px 6px 0;
 }
 
-input:checked + .custom__checkbox > .custom__checkbox__face:hover .face__eye:before {
-    top: 2px;
+input:checked
+  + .custom__checkbox
+  > .custom__checkbox__face:hover
+  .face__eye:before {
+  top: 2px;
 }
 
-input:checked + .custom__checkbox > .custom__checkbox__face:hover .face__eye > span {
-    opacity: 1;
-    top: 3px;
-    left: 2px;
+input:checked
+  + .custom__checkbox
+  > .custom__checkbox__face:hover
+  .face__eye
+  > span {
+  opacity: 1;
+  top: 3px;
+  left: 2px;
 }
 
 input:focus + .custom__checkbox {
-    box-shadow: 0 0 16px #45a2f5;
+  box-shadow: 0 0 16px #45a2f5;
 }
