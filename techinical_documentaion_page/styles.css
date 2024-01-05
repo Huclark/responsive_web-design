@@ -1,0 +1,110 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans";
+  color: #333333;
+  display: flex;
+  box-sizing: border-box;
+  line-height: 1.5;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}
+
+header {
+  color: #000000;
+  text-align: center;
+}
+
+#main-doc header {
+  text-align: left;
+}
+
+.nav-link {
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 300px;
+  border-color: #333333;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: solid grey;
+}
+
+.nav-link > li {
+  display: block;
+  text-align: left;
+  width: 100%;
+  border-top: 1px solid #333333;
+  padding: 10px 20px;
+}
+
+#navbar > ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.nav-link > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+}
+
+@media (max-width: 825px) {
+  body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: static;
+    height: 300px;
+    width: 100%;
+    overflow-y: hidden;
+    border-right: none;
+    border-bottom: solid grey; /* Add a bottom border */
+    text-align: center;
+  }
+
+  #navbar ul {
+    height: calc(100vh - 300px); /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+
+  .nav-link:nth-of-type(1) > li {
+    border-top: solid grey;
+  }
+
+  .nav-link > li {
+    padding-left: 40px; /* Adjust the padding as needed */
+    width: 100%; /* Make the list items full width on smaller screens */
+  }
+
+  #navbar header {
+    margin-top: 40px;
+  }
+
+  #main-doc {
+    margin-top: 300px; /* Adjust this value to create space for the navbar */
+  }
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+  padding-left: 30px;
+}
