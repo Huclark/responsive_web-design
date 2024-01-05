@@ -19,6 +19,13 @@ body {
 header {
   color: #000000;
   text-align: center;
+  font-weight: thin;
+  font-size: 1.8em;
+}
+
+.heading {
+  margin: 10px;
+  padding-bottom: 5px;
 }
 
 #main-doc header {
@@ -48,7 +55,7 @@ header {
   text-align: left;
   width: 100%;
   border-top: 1px solid #333333;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 #navbar > ul {
@@ -63,6 +70,37 @@ header {
   color: #1b1b32;
 }
 
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+  padding: 20px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0;
+  font-weight: thin;
+}
+
+section article {
+  padding-left: 15px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  background-color: #dfdfe2;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+#Reference article {
+  margin-left: 20px;
+}
+
 @media (max-width: 825px) {
   body {
     box-sizing: border-box;
@@ -75,36 +113,31 @@ header {
     height: 300px;
     width: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
     border-right: none;
-    border-bottom: solid grey; /* Add a bottom border */
+    border-bottom: solid grey;
     text-align: center;
   }
 
   #navbar ul {
-    height: calc(100vh - 300px); /* Adjust the height as needed */
+    height: calc(100vh - 450px); /* Adjust the height as needed */
     overflow-y: auto;
-  }
-
-  .nav-link:nth-of-type(1) > li {
-    border-top: solid grey;
+    overflow-x: hidden;
+    width: 100%;
+    border-top: 1px solid grey;
   }
 
   .nav-link > li {
-    padding-left: 40px; /* Adjust the padding as needed */
+    padding-left: 30px; /* Adjust the padding as needed */
     width: 100%; /* Make the list items full width on smaller screens */
   }
 
-  #navbar header {
-    margin-top: 40px;
+  .heading {
+    margin-top: 5px;
   }
 
   #main-doc {
-    margin-top: 300px; /* Adjust this value to create space for the navbar */
+    margin-top: 300px;
+    margin-left: 10px;
   }
-}
-
-#main-doc {
-  position: absolute;
-  margin-left: 320px;
-  padding-left: 30px;
 }
