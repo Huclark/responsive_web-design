@@ -12,4 +12,4 @@
 <h2 id="about">
   About
 </h2>
-<p>In this project, I learnt CSS Grid by building a magazine webpage</p>
+<p>In this project, I learnt CSS Grid by building a magazin webpage</p>
